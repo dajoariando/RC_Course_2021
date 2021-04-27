@@ -9,6 +9,22 @@
    categories="System" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
+   element DLEN
+   {
+      datum _sortIndex
+      {
+         value = "40";
+         type = "int";
+      }
+   }
+   element DLEN.s1
+   {
+      datum baseAddress
+      {
+         value = "67109056";
+         type = "String";
+      }
+   }
    element adc_fifo_dc
    {
       datum _sortIndex
@@ -331,7 +347,7 @@
    {
       datum _sortIndex
       {
-         value = "37";
+         value = "38";
          type = "int";
       }
    }
@@ -381,7 +397,7 @@
    {
       datum _sortIndex
       {
-         value = "38";
+         value = "39";
          type = "int";
       }
    }
@@ -424,88 +440,108 @@
          type = "String";
       }
    }
-   element fifo_dummy64_in
-   {
-      datum _sortIndex
-      {
-         value = "35";
-         type = "int";
-      }
-   }
-   element fifo_dummy64_in.in
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "83886096";
-         type = "String";
-      }
-   }
-   element fifo_dummy64_in.in_csr
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "83886176";
-         type = "String";
-      }
-   }
-   element fifo_dummy64_in.out
-   {
-      datum baseAddress
-      {
-         value = "0";
-         type = "String";
-      }
-   }
-   element fifo_dummy64_out
-   {
-      datum _sortIndex
-      {
-         value = "36";
-         type = "int";
-      }
-   }
-   element fifo_dummy64_out.in_csr
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "83886144";
-         type = "String";
-      }
-   }
-   element fifo_dummy64_out.out
-   {
-      datum _lockedAddress
-      {
-         value = "1";
-         type = "boolean";
-      }
-      datum baseAddress
-      {
-         value = "83886080";
-         type = "String";
-      }
-   }
    element fifo_rst
    {
       datum _sortIndex
       {
          value = "21";
          type = "int";
+      }
+   }
+   element firfifo_0
+   {
+      datum _sortIndex
+      {
+         value = "42";
+         type = "int";
+      }
+   }
+   element firfifo_0.in_csr
+   {
+      datum baseAddress
+      {
+         value = "67108992";
+         type = "String";
+      }
+   }
+   element firfifo_0.out
+   {
+      datum baseAddress
+      {
+         value = "67109096";
+         type = "String";
+      }
+   }
+   element firfifo_1
+   {
+      datum _sortIndex
+      {
+         value = "43";
+         type = "int";
+      }
+   }
+   element firfifo_1.in_csr
+   {
+      datum baseAddress
+      {
+         value = "67108960";
+         type = "String";
+      }
+   }
+   element firfifo_1.out
+   {
+      datum baseAddress
+      {
+         value = "67109088";
+         type = "String";
+      }
+   }
+   element firfifo_2
+   {
+      datum _sortIndex
+      {
+         value = "44";
+         type = "int";
+      }
+   }
+   element firfifo_2.in_csr
+   {
+      datum baseAddress
+      {
+         value = "67108928";
+         type = "String";
+      }
+   }
+   element firfifo_2.out
+   {
+      datum baseAddress
+      {
+         value = "67109080";
+         type = "String";
+      }
+   }
+   element firfifo_3
+   {
+      datum _sortIndex
+      {
+         value = "45";
+         type = "int";
+      }
+   }
+   element firfifo_3.in_csr
+   {
+      datum baseAddress
+      {
+         value = "67108896";
+         type = "String";
+      }
+   }
+   element firfifo_3.out
+   {
+      datum baseAddress
+      {
+         value = "67109072";
+         type = "String";
       }
    }
    element gp_pll
@@ -579,6 +615,40 @@
          type = "String";
       }
    }
+   element infifo_0
+   {
+      datum _sortIndex
+      {
+         value = "37";
+         type = "int";
+      }
+   }
+   element infifo_0.in_csr
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "83886144";
+         type = "String";
+      }
+   }
+   element infifo_0.out
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "83886080";
+         type = "String";
+      }
+   }
    element jtag_uart
    {
       datum _sortIndex
@@ -597,6 +667,22 @@
       datum baseAddress
       {
          value = "1088";
+         type = "String";
+      }
+   }
+   element led
+   {
+      datum _sortIndex
+      {
+         value = "41";
+         type = "int";
+      }
+   }
+   element led.s1
+   {
+      datum baseAddress
+      {
+         value = "67108880";
          type = "String";
       }
    }
@@ -817,6 +903,72 @@
          type = "String";
       }
    }
+   element outfifo_0
+   {
+      datum _sortIndex
+      {
+         value = "35";
+         type = "int";
+      }
+   }
+   element outfifo_0.in
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "83886096";
+         type = "String";
+      }
+   }
+   element outfifo_0.in_csr
+   {
+      datum _lockedAddress
+      {
+         value = "1";
+         type = "boolean";
+      }
+      datum baseAddress
+      {
+         value = "83886176";
+         type = "String";
+      }
+   }
+   element outfifo_0.out
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "String";
+      }
+   }
+   element outfifo_1
+   {
+      datum _sortIndex
+      {
+         value = "36";
+         type = "int";
+      }
+   }
+   element outfifo_1.in
+   {
+      datum baseAddress
+      {
+         value = "67109104";
+         type = "String";
+      }
+   }
+   element outfifo_1.in_csr
+   {
+      datum baseAddress
+      {
+         value = "67109024";
+         type = "String";
+      }
+   }
    element sdram
    {
       datum _sortIndex
@@ -943,51 +1095,21 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface
-   name="adc_fifo_in"
-   internal="adc_fifo_dc.in"
-   type="avalon_streaming"
-   dir="end" />
+ <interface name="adc_fifo_in" internal="adc_fifo_dc.in" />
  <interface
    name="adc_val_sub"
-   internal="nmr_parameters.adc_val_sub_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.adc_val_sub_external_connection" />
  <interface
    name="alt_vip_itc_0_clocked_video"
    internal="alt_vip_itc_0.clocked_video"
    type="conduit"
    dir="end" />
- <interface
-   name="analyzer_pll_locked"
-   internal="analyzer_pll.locked"
-   type="conduit"
-   dir="end" />
- <interface
-   name="analyzer_pll_outclk0"
-   internal="analyzer_pll.outclk0"
-   type="clock"
-   dir="start" />
- <interface
-   name="analyzer_pll_outclk1"
-   internal="analyzer_pll.outclk1"
-   type="clock"
-   dir="start" />
- <interface
-   name="analyzer_pll_outclk2"
-   internal="analyzer_pll.outclk2"
-   type="clock"
-   dir="start" />
- <interface
-   name="analyzer_pll_outclk3"
-   internal="analyzer_pll.outclk3"
-   type="clock"
-   dir="start" />
- <interface
-   name="analyzer_pll_reset"
-   internal="analyzer_pll.reset"
-   type="reset"
-   dir="end" />
+ <interface name="analyzer_pll_locked" internal="analyzer_pll.locked" />
+ <interface name="analyzer_pll_outclk0" internal="analyzer_pll.outclk0" />
+ <interface name="analyzer_pll_outclk1" internal="analyzer_pll.outclk1" />
+ <interface name="analyzer_pll_outclk2" internal="analyzer_pll.outclk2" />
+ <interface name="analyzer_pll_outclk3" internal="analyzer_pll.outclk3" />
+ <interface name="analyzer_pll_reset" internal="analyzer_pll.reset" />
  <interface name="aux_cnt_out" internal="aux_cnt_out.external_connection" />
  <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
  <interface
@@ -1000,79 +1122,60 @@
    internal="ctrl_out.external_connection"
    type="conduit"
    dir="end" />
- <interface name="dac_grad" internal="dac_grad.external" type="conduit" dir="end" />
- <interface
-   name="dac_preamp"
-   internal="dac_preamp.external"
-   type="conduit"
-   dir="end" />
- <interface
-   name="dconv_fifo_in"
-   internal="dconv_fifo_dc.in"
-   type="avalon_streaming"
-   dir="end" />
- <interface
-   name="dconv_fir_in"
-   internal="dconv_fir.avalon_streaming_sink"
-   type="avalon_streaming"
-   dir="end" />
- <interface
-   name="dconv_fir_out"
-   internal="dconv_fir.avalon_streaming_source"
-   type="avalon_streaming"
-   dir="start" />
- <interface
-   name="dconv_fir_q_in"
-   internal="dconv_fir_q.avalon_streaming_sink"
-   type="avalon_streaming"
-   dir="end" />
- <interface
-   name="dconv_fir_q_out"
-   internal="dconv_fir_q.avalon_streaming_source"
-   type="avalon_streaming"
-   dir="start" />
- <interface
-   name="dconv_fir_q_rst"
-   internal="dconv_fir_q.rst"
-   type="reset"
-   dir="end" />
- <interface name="dconv_fir_rst" internal="dconv_fir.rst" type="reset" dir="end" />
+ <interface name="dac_grad" internal="dac_grad.external" />
+ <interface name="dac_preamp" internal="dac_preamp.external" />
+ <interface name="dconv_fifo_in" internal="dconv_fifo_dc.in" />
+ <interface name="dconv_fir_in" internal="dconv_fir.avalon_streaming_sink" />
+ <interface name="dconv_fir_out" internal="dconv_fir.avalon_streaming_source" />
+ <interface name="dconv_fir_q_in" internal="dconv_fir_q.avalon_streaming_sink" />
+ <interface name="dconv_fir_q_out" internal="dconv_fir_q.avalon_streaming_source" />
+ <interface name="dconv_fir_q_rst" internal="dconv_fir_q.rst" />
+ <interface name="dconv_fir_rst" internal="dconv_fir.rst" />
  <interface
    name="dec_fact"
-   internal="nmr_parameters.dec_fact_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.dec_fact_external_connection" />
  <interface
    name="delay_nosig"
-   internal="nmr_parameters.delay_nosig_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.delay_nosig_external_connection" />
  <interface
    name="delay_sig"
-   internal="nmr_parameters.delay_sig_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.delay_sig_external_connection" />
  <interface
    name="delay_t1"
-   internal="nmr_parameters.delay_t1_external_connection"
+   internal="nmr_parameters.delay_t1_external_connection" />
+ <interface
+   name="dlen"
+   internal="DLEN.external_connection"
    type="conduit"
    dir="end" />
  <interface
    name="echo_skip"
-   internal="nmr_parameters.echo_skip_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.echo_skip_external_connection" />
  <interface
    name="echoes_per_scan"
-   internal="nmr_parameters.echoes_per_scan_external_connection"
-   type="conduit"
+   internal="nmr_parameters.echoes_per_scan_external_connection" />
+ <interface name="fifo_clk_bridge_in" internal="fifo_clk_bridge.in_clk" />
+ <interface name="fifo_rst" internal="fifo_rst.in_reset" />
+ <interface
+   name="firfifo_0"
+   internal="firfifo_0.in"
+   type="avalon_streaming"
    dir="end" />
  <interface
-   name="fifo_clk_bridge_in"
-   internal="fifo_clk_bridge.in_clk"
-   type="clock"
+   name="firfifo_1"
+   internal="firfifo_1.in"
+   type="avalon_streaming"
    dir="end" />
- <interface name="fifo_rst" internal="fifo_rst.in_reset" type="reset" dir="end" />
+ <interface
+   name="firfifo_2"
+   internal="firfifo_2.in"
+   type="avalon_streaming"
+   dir="end" />
+ <interface
+   name="firfifo_3"
+   internal="firfifo_3.in"
+   type="avalon_streaming"
+   dir="end" />
  <interface
    name="hps_0_h2f_reset"
    internal="hps_0.h2f_reset"
@@ -1080,10 +1183,18 @@
    dir="start" />
  <interface name="hps_0_hps_io" internal="hps_0.hps_io" type="conduit" dir="end" />
  <interface name="i2c_ext" internal="i2c_ext.i2c_serial" />
- <interface name="i2c_int" internal="i2c_int.i2c_serial" type="conduit" dir="end" />
+ <interface name="i2c_int" internal="i2c_int.i2c_serial" />
+ <interface
+   name="infifo_0"
+   internal="infifo_0.in"
+   type="avalon_streaming"
+   dir="end" />
  <interface
    name="init_delay"
-   internal="nmr_parameters.init_delay_external_connection"
+   internal="nmr_parameters.init_delay_external_connection" />
+ <interface
+   name="led"
+   internal="led.external_connection"
    type="conduit"
    dir="end" />
  <interface name="memory" internal="hps_0.memory" type="conduit" dir="end" />
@@ -1106,6 +1217,16 @@
    type="reset"
    dir="end" />
  <interface
+   name="outfifo_0"
+   internal="outfifo_0.out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
+   name="outfifo_1"
+   internal="outfifo_1.out"
+   type="avalon_streaming"
+   dir="start" />
+ <interface
    name="pll_vga_clk65"
    internal="gp_pll.outclk1"
    type="clock"
@@ -1117,52 +1238,48 @@
    dir="end" />
  <interface
    name="pulse_180deg"
-   internal="nmr_parameters.pulse_180deg_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.pulse_180deg_external_connection" />
  <interface
    name="pulse_90deg"
-   internal="nmr_parameters.pulse_90deg_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.pulse_90deg_external_connection" />
  <interface
    name="pulse_t1"
-   internal="nmr_parameters.pulse_t1_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.pulse_t1_external_connection" />
  <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
  <interface
    name="rx_delay"
-   internal="nmr_parameters.rx_delay_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.rx_delay_external_connection" />
  <interface
    name="samples_per_echo"
-   internal="nmr_parameters.samples_per_echo_external_connection"
-   type="conduit"
-   dir="end" />
+   internal="nmr_parameters.samples_per_echo_external_connection" />
  <interface name="sdram_clk" internal="gp_pll.outclk3" type="clock" dir="start" />
  <interface name="sdram_wire" internal="sdram.wire" type="conduit" dir="end" />
- <interface
-   name="spi_afe_relays"
-   internal="spi_afe_relays.external"
-   type="conduit"
-   dir="end" />
- <interface
-   name="spi_mtch_ntwrk"
-   internal="spi_mtch_ntwrk.external"
-   type="conduit"
-   dir="end" />
+ <interface name="spi_afe_relays" internal="spi_afe_relays.external" />
+ <interface name="spi_mtch_ntwrk" internal="spi_mtch_ntwrk.external" />
  <interface
    name="switches"
    internal="switches.external_connection"
    type="conduit"
    dir="end" />
+ <module name="DLEN" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="false" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="32" />
+ </module>
  <module
    name="adc_fifo_dc"
    kind="altera_avalon_dc_fifo"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="BITS_PER_SYMBOL" value="32" />
   <parameter name="CHANNEL_WIDTH" value="0" />
   <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
@@ -1180,7 +1297,7 @@
    name="adc_fifo_mem"
    kind="altera_avalon_fifo"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="avalonMMAvalonMMDataWidth" value="32" />
   <parameter name="avalonMMAvalonSTDataWidth" value="32" />
   <parameter name="bitsPerSymbol" value="32" />
@@ -1251,7 +1368,7 @@
   <parameter name="RMASTER_BURST_TARGET" value="32" />
   <parameter name="RMASTER_FIFO_DEPTH" value="64" />
  </module>
- <module name="analyzer_pll" kind="altera_pll" version="17.1" enabled="1">
+ <module name="analyzer_pll" kind="altera_pll" version="17.1" enabled="0">
   <parameter name="debug_print_output" value="false" />
   <parameter name="debug_use_rbc_taf_method" value="false" />
   <parameter name="device" value="5CSEMA5F31C6" />
@@ -1458,7 +1575,7 @@
    name="analyzer_pll_reconfig"
    kind="altera_pll_reconfig"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="ENABLE_BYTEENABLE" value="false" />
   <parameter name="ENABLE_MIF" value="false" />
   <parameter name="MIF_FILE_NAME" value="" />
@@ -1516,7 +1633,7 @@
   <parameter name="simDrivenValue" value="0" />
   <parameter name="width" value="32" />
  </module>
- <module name="dac_grad" kind="altera_avalon_spi" version="17.1" enabled="1">
+ <module name="dac_grad" kind="altera_avalon_spi" version="17.1" enabled="0">
   <parameter name="avalonSpec" value="2.0" />
   <parameter name="clockPhase" value="0" />
   <parameter name="clockPolarity" value="1" />
@@ -1532,7 +1649,7 @@
   <parameter name="targetClockRate" value="128000" />
   <parameter name="targetSlaveSelectToSClkDelay" value="0.0" />
  </module>
- <module name="dac_preamp" kind="altera_avalon_spi" version="17.1" enabled="1">
+ <module name="dac_preamp" kind="altera_avalon_spi" version="17.1" enabled="0">
   <parameter name="avalonSpec" value="2.0" />
   <parameter name="clockPhase" value="0" />
   <parameter name="clockPolarity" value="1" />
@@ -1552,7 +1669,7 @@
    name="dconv_fifo_dc"
    kind="altera_avalon_dc_fifo"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="BITS_PER_SYMBOL" value="32" />
   <parameter name="CHANNEL_WIDTH" value="0" />
   <parameter name="ENABLE_EXPLICIT_MAXCHANNEL" value="false" />
@@ -1570,7 +1687,7 @@
    name="dconv_fifo_mem"
    kind="altera_avalon_fifo"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="avalonMMAvalonMMDataWidth" value="32" />
   <parameter name="avalonMMAvalonSTDataWidth" value="32" />
   <parameter name="bitsPerSymbol" value="32" />
@@ -1595,7 +1712,7 @@
    name="dconv_fir"
    kind="altera_fir_compiler_ii"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="L_bandsFilter" value="1" />
   <parameter name="MODE_STRING" value="None Set" />
   <parameter name="backPressure" value="false" />
@@ -1643,7 +1760,7 @@
    name="dconv_fir_q"
    kind="altera_fir_compiler_ii"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="L_bandsFilter" value="1" />
   <parameter name="MODE_STRING" value="None Set" />
   <parameter name="backPressure" value="false" />
@@ -1687,7 +1804,7 @@
   <parameter name="speedGrade" value="medium" />
   <parameter name="symmetryMode" value="nsym" />
  </module>
- <module name="dma_dconvi" kind="altera_avalon_dma" version="17.1" enabled="1">
+ <module name="dma_dconvi" kind="altera_avalon_dma" version="17.1" enabled="0">
   <parameter name="allowByteTransactions" value="false" />
   <parameter name="allowDoubleWordTransactions" value="false" />
   <parameter name="allowHalfWordTransactions" value="false" />
@@ -1699,9 +1816,9 @@
   <parameter name="fifoDepth" value="1024" />
   <parameter name="maxBurstSize" value="4" />
   <parameter name="minimumDmaTransactionRegisterWidth" value="32" />
-  <parameter name="readAddressMap"><![CDATA[<address-map><slave name='dconv_fifo_mem.out' start='0x448' end='0x450' /></address-map>]]></parameter>
-  <parameter name="readSlaveAddressWidthMax" value="11" />
-  <parameter name="readSlaveDataWidthMax" value="32" />
+  <parameter name="readAddressMap" value="" />
+  <parameter name="readSlaveAddressWidthMax" value="0" />
+  <parameter name="readSlaveDataWidthMax" value="16" />
   <parameter name="softresetEnable" value="true" />
   <parameter name="useRegistersForFIFO" value="false" />
   <parameter name="writeAddressMap"><![CDATA[<address-map><slave name='sdram.s1' start='0x0' end='0x4000000' /></address-map>]]></parameter>
@@ -1729,7 +1846,7 @@
   <parameter name="writeSlaveAddressWidthMax" value="26" />
   <parameter name="writeSlaveDataWidthMax" value="16" />
  </module>
- <module name="dma_fifo" kind="altera_avalon_dma" version="17.1" enabled="1">
+ <module name="dma_fifo" kind="altera_avalon_dma" version="17.1" enabled="0">
   <parameter name="allowByteTransactions" value="false" />
   <parameter name="allowDoubleWordTransactions" value="false" />
   <parameter name="allowHalfWordTransactions" value="false" />
@@ -1741,7 +1858,7 @@
   <parameter name="fifoDepth" value="1024" />
   <parameter name="maxBurstSize" value="1024" />
   <parameter name="minimumDmaTransactionRegisterWidth" value="32" />
-  <parameter name="readAddressMap"><![CDATA[<address-map><slave name='adc_fifo_mem.out' start='0x0' end='0x8' /><slave name='switches.s1' start='0x4000000' end='0x4000010' /></address-map>]]></parameter>
+  <parameter name="readAddressMap"><![CDATA[<address-map><slave name='switches.s1' start='0x4000000' end='0x4000010' /></address-map>]]></parameter>
   <parameter name="readSlaveAddressWidthMax" value="27" />
   <parameter name="readSlaveDataWidthMax" value="32" />
   <parameter name="softresetEnable" value="true" />
@@ -1754,7 +1871,7 @@
    name="fifo_clk_bridge"
    kind="altera_clock_bridge"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="DERIVED_CLOCK_RATE" value="0" />
   <parameter name="EXPLICIT_CLOCK_RATE" value="0" />
   <parameter name="NUM_CLOCK_OUTPUTS" value="1" />
@@ -1784,62 +1901,96 @@
   <parameter name="useRegister" value="false" />
   <parameter name="useWriteControl" value="true" />
  </module>
- <module
-   name="fifo_dummy64_in"
-   kind="altera_avalon_fifo"
-   version="17.1"
-   enabled="0">
-  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
-  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
-  <parameter name="bitsPerSymbol" value="32" />
-  <parameter name="channelWidth" value="0" />
-  <parameter name="deviceFamilyString" value="Cyclone V" />
-  <parameter name="errorWidth" value="0" />
-  <parameter name="fifoDepth" value="128" />
-  <parameter name="fifoInputInterfaceOptions" value="AVALONMM_WRITE" />
-  <parameter name="fifoOutputInterfaceOptions" value="AVALONST_SOURCE" />
-  <parameter name="showHiddenFeatures" value="false" />
-  <parameter name="singleClockMode" value="true" />
-  <parameter name="singleResetMode" value="false" />
-  <parameter name="symbolsPerBeat" value="1" />
-  <parameter name="useBackpressure" value="true" />
-  <parameter name="useIRQ" value="false" />
-  <parameter name="usePacket" value="false" />
-  <parameter name="useReadControl" value="false" />
-  <parameter name="useRegister" value="false" />
-  <parameter name="useWriteControl" value="true" />
+ <module name="fifo_rst" kind="altera_reset_bridge" version="17.1" enabled="0">
+  <parameter name="ACTIVE_LOW_RESET" value="0" />
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="NUM_RESET_OUTPUTS" value="1" />
+  <parameter name="SYNCHRONOUS_EDGES" value="deassert" />
+  <parameter name="USE_RESET_REQUEST" value="0" />
  </module>
- <module
-   name="fifo_dummy64_out"
-   kind="altera_avalon_fifo"
-   version="17.1"
-   enabled="0">
+ <module name="firfifo_0" kind="altera_avalon_fifo" version="17.1" enabled="1">
   <parameter name="avalonMMAvalonMMDataWidth" value="64" />
   <parameter name="avalonMMAvalonSTDataWidth" value="32" />
   <parameter name="bitsPerSymbol" value="32" />
   <parameter name="channelWidth" value="0" />
   <parameter name="deviceFamilyString" value="Cyclone V" />
   <parameter name="errorWidth" value="0" />
-  <parameter name="fifoDepth" value="128" />
+  <parameter name="fifoDepth" value="8192" />
   <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
   <parameter name="fifoOutputInterfaceOptions" value="AVALONMM_READ" />
   <parameter name="showHiddenFeatures" value="false" />
   <parameter name="singleClockMode" value="true" />
   <parameter name="singleResetMode" value="false" />
   <parameter name="symbolsPerBeat" value="1" />
-  <parameter name="useBackpressure" value="true" />
+  <parameter name="useBackpressure" value="false" />
   <parameter name="useIRQ" value="false" />
   <parameter name="usePacket" value="false" />
   <parameter name="useReadControl" value="false" />
   <parameter name="useRegister" value="false" />
   <parameter name="useWriteControl" value="true" />
  </module>
- <module name="fifo_rst" kind="altera_reset_bridge" version="17.1" enabled="1">
-  <parameter name="ACTIVE_LOW_RESET" value="0" />
-  <parameter name="AUTO_CLK_CLOCK_RATE" value="0" />
-  <parameter name="NUM_RESET_OUTPUTS" value="1" />
-  <parameter name="SYNCHRONOUS_EDGES" value="deassert" />
-  <parameter name="USE_RESET_REQUEST" value="0" />
+ <module name="firfifo_1" kind="altera_avalon_fifo" version="17.1" enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="32" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="8192" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONMM_READ" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="true" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="1" />
+  <parameter name="useBackpressure" value="false" />
+  <parameter name="useIRQ" value="false" />
+  <parameter name="usePacket" value="false" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
+ </module>
+ <module name="firfifo_2" kind="altera_avalon_fifo" version="17.1" enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="32" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="8192" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONMM_READ" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="true" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="1" />
+  <parameter name="useBackpressure" value="false" />
+  <parameter name="useIRQ" value="false" />
+  <parameter name="usePacket" value="false" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
+ </module>
+ <module name="firfifo_3" kind="altera_avalon_fifo" version="17.1" enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="32" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="8192" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONMM_READ" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="true" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="1" />
+  <parameter name="useBackpressure" value="false" />
+  <parameter name="useIRQ" value="false" />
+  <parameter name="usePacket" value="false" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
  </module>
  <module name="gp_pll" kind="altera_pll" version="17.1" enabled="1">
   <parameter name="debug_print_output" value="false" />
@@ -2579,10 +2730,31 @@
   <parameter name="USE_AV_ST" value="0" />
   <parameter name="clockRate" value="50000000" />
  </module>
- <module name="i2c_int" kind="altera_avalon_i2c" version="17.1" enabled="1">
+ <module name="i2c_int" kind="altera_avalon_i2c" version="17.1" enabled="0">
   <parameter name="FIFO_DEPTH" value="32" />
   <parameter name="USE_AV_ST" value="0" />
   <parameter name="clockRate" value="50000000" />
+ </module>
+ <module name="infifo_0" kind="altera_avalon_fifo" version="17.1" enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="32" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="8192" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONST_SINK" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONMM_READ" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="true" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="1" />
+  <parameter name="useBackpressure" value="false" />
+  <parameter name="useIRQ" value="false" />
+  <parameter name="usePacket" value="false" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
  </module>
  <module
    name="jtag_uart"
@@ -2602,6 +2774,20 @@
   <parameter name="useRelativePathForSimFile" value="false" />
   <parameter name="writeBufferDepth" value="64" />
   <parameter name="writeIRQThreshold" value="8" />
+ </module>
+ <module name="led" kind="altera_avalon_pio" version="17.1" enabled="1">
+  <parameter name="bitClearingEdgeCapReg" value="false" />
+  <parameter name="bitModifyingOutReg" value="false" />
+  <parameter name="captureEdge" value="false" />
+  <parameter name="clockRate" value="50000000" />
+  <parameter name="direction" value="Output" />
+  <parameter name="edgeType" value="RISING" />
+  <parameter name="generateIRQ" value="false" />
+  <parameter name="irqType" value="LEVEL" />
+  <parameter name="resetValue" value="0" />
+  <parameter name="simDoTestBenchWiring" value="true" />
+  <parameter name="simDrivenValue" value="0" />
+  <parameter name="width" value="10" />
  </module>
  <module
    name="master_non_sec"
@@ -2631,51 +2817,51 @@
   <parameter name="PLI_PORT" value="50000" />
   <parameter name="USE_PLI" value="0" />
  </module>
- <module name="nmr_parameters" kind="subsystemG" version="1.0" enabled="1">
-  <parameter name="AUTO_ADC_VAL_SUB_CLK_CLOCK_DOMAIN" value="6" />
+ <module name="nmr_parameters" kind="subsystemG" version="1.0" enabled="0">
+  <parameter name="AUTO_ADC_VAL_SUB_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_ADC_VAL_SUB_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_ADC_VAL_SUB_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_DEC_FACT_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_ADC_VAL_SUB_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DEC_FACT_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_DEC_FACT_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_DEC_FACT_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_DELAY_NOSIG_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_DEC_FACT_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DELAY_NOSIG_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_DELAY_NOSIG_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_DELAY_NOSIG_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_DELAY_SIG_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_DELAY_NOSIG_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DELAY_SIG_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_DELAY_SIG_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_DELAY_SIG_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_DELAY_T1_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_DELAY_SIG_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_DELAY_T1_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_DELAY_T1_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_DELAY_T1_CLK_RESET_DOMAIN" value="6" />
+  <parameter name="AUTO_DELAY_T1_CLK_RESET_DOMAIN" value="1" />
   <parameter name="AUTO_DEVICE" value="5CSEMA5F31C6" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="6" />
-  <parameter name="AUTO_ECHOES_PER_SCAN_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_ECHOES_PER_SCAN_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_ECHOES_PER_SCAN_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_ECHOES_PER_SCAN_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_ECHO_SKIP_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_ECHOES_PER_SCAN_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_ECHO_SKIP_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_ECHO_SKIP_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_ECHO_SKIP_CLK_RESET_DOMAIN" value="6" />
+  <parameter name="AUTO_ECHO_SKIP_CLK_RESET_DOMAIN" value="1" />
   <parameter name="AUTO_GENERATION_ID" value="0" />
-  <parameter name="AUTO_INIT_DELAY_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_INIT_DELAY_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_INIT_DELAY_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_INIT_DELAY_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_PULSE_180DEG_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_INIT_DELAY_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_PULSE_180DEG_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_PULSE_180DEG_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_PULSE_180DEG_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_PULSE_90DEG_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_PULSE_180DEG_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_PULSE_90DEG_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_PULSE_90DEG_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_PULSE_90DEG_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_PULSE_T1_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_PULSE_90DEG_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_PULSE_T1_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_PULSE_T1_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_PULSE_T1_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_RX_DELAY_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_PULSE_T1_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_RX_DELAY_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_RX_DELAY_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_RX_DELAY_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_SAMPLES_PER_ECHO_CLK_CLOCK_DOMAIN" value="6" />
+  <parameter name="AUTO_RX_DELAY_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_SAMPLES_PER_ECHO_CLK_CLOCK_DOMAIN" value="1" />
   <parameter name="AUTO_SAMPLES_PER_ECHO_CLK_CLOCK_RATE" value="50000000" />
-  <parameter name="AUTO_SAMPLES_PER_ECHO_CLK_RESET_DOMAIN" value="6" />
-  <parameter name="AUTO_UNIQUE_ID">$${FILENAME}_nmr_parameters</parameter>
+  <parameter name="AUTO_SAMPLES_PER_ECHO_CLK_RESET_DOMAIN" value="1" />
+  <parameter name="AUTO_UNIQUE_ID">soc_system_nmr_parameters</parameter>
  </module>
  <module name="nmr_sys_pll" kind="altera_pll" version="17.1" enabled="1">
   <parameter name="debug_print_output" value="false" />
@@ -2890,6 +3076,48 @@
   <parameter name="MIF_FILE_NAME" value="" />
   <parameter name="device_family" value="Cyclone V" />
  </module>
+ <module name="outfifo_0" kind="altera_avalon_fifo" version="17.1" enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="32" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="4096" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONMM_WRITE" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONST_SOURCE" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="true" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="1" />
+  <parameter name="useBackpressure" value="true" />
+  <parameter name="useIRQ" value="false" />
+  <parameter name="usePacket" value="false" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
+ </module>
+ <module name="outfifo_1" kind="altera_avalon_fifo" version="17.1" enabled="1">
+  <parameter name="avalonMMAvalonMMDataWidth" value="64" />
+  <parameter name="avalonMMAvalonSTDataWidth" value="32" />
+  <parameter name="bitsPerSymbol" value="32" />
+  <parameter name="channelWidth" value="0" />
+  <parameter name="deviceFamilyString" value="Cyclone V" />
+  <parameter name="errorWidth" value="0" />
+  <parameter name="fifoDepth" value="4096" />
+  <parameter name="fifoInputInterfaceOptions" value="AVALONMM_WRITE" />
+  <parameter name="fifoOutputInterfaceOptions" value="AVALONST_SOURCE" />
+  <parameter name="showHiddenFeatures" value="false" />
+  <parameter name="singleClockMode" value="true" />
+  <parameter name="singleResetMode" value="false" />
+  <parameter name="symbolsPerBeat" value="1" />
+  <parameter name="useBackpressure" value="true" />
+  <parameter name="useIRQ" value="false" />
+  <parameter name="usePacket" value="false" />
+  <parameter name="useReadControl" value="false" />
+  <parameter name="useRegister" value="false" />
+  <parameter name="useWriteControl" value="true" />
+ </module>
  <module
    name="sdram"
    kind="altera_avalon_new_sdram_controller"
@@ -2923,7 +3151,7 @@
    name="spi_afe_relays"
    kind="altera_avalon_spi"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="avalonSpec" value="2.0" />
   <parameter name="clockPhase" value="0" />
   <parameter name="clockPolarity" value="0" />
@@ -2943,7 +3171,7 @@
    name="spi_mtch_ntwrk"
    kind="altera_avalon_spi"
    version="17.1"
-   enabled="1">
+   enabled="0">
   <parameter name="avalonSpec" value="2.0" />
   <parameter name="clockPhase" value="0" />
   <parameter name="clockPolarity" value="0" />
@@ -2993,7 +3221,7 @@
    kind="avalon"
    version="17.1"
    start="hps_0.h2f_axi_master"
-   end="fifo_dummy64_in.in">
+   end="outfifo_0.in">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x05000010" />
   <parameter name="defaultConnection" value="false" />
@@ -3011,7 +3239,16 @@
    kind="avalon"
    version="17.1"
    start="hps_0.h2f_axi_master"
-   end="fifo_dummy64_in.in_csr">
+   end="outfifo_1.in">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000f0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="outfifo_0.in_csr">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x05000060" />
   <parameter name="defaultConnection" value="false" />
@@ -3020,7 +3257,7 @@
    kind="avalon"
    version="17.1"
    start="hps_0.h2f_axi_master"
-   end="fifo_dummy64_out.in_csr">
+   end="infifo_0.in_csr">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x05000040" />
   <parameter name="defaultConnection" value="false" />
@@ -3038,7 +3275,52 @@
    kind="avalon"
    version="17.1"
    start="hps_0.h2f_axi_master"
-   end="fifo_dummy64_out.out">
+   end="outfifo_1.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000a0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_0.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04000080" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_1.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04000060" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_2.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04000040" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_3.in_csr">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04000020" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="infifo_0.out">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x05000000" />
   <parameter name="defaultConnection" value="false" />
@@ -3050,6 +3332,42 @@
    end="fifo_dummy.out">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x04000010" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_0.out">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000e8" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_1.out">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000e0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_2.out">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000d8" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="firfifo_3.out">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000d0" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -3068,6 +3386,24 @@
    end="sdram.s1">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x0000" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="DLEN.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x040000c0" />
+  <parameter name="defaultConnection" value="false" />
+ </connection>
+ <connection
+   kind="avalon"
+   version="17.1"
+   start="hps_0.h2f_axi_master"
+   end="led.s1">
+  <parameter name="arbitrationPriority" value="1" />
+  <parameter name="baseAddress" value="0x04000010" />
   <parameter name="defaultConnection" value="false" />
  </connection>
  <connection
@@ -3713,7 +4049,7 @@
    kind="avalon"
    version="17.1"
    start="dma_dummy.read_master"
-   end="fifo_dummy64_out.out">
+   end="infifo_0.out">
   <parameter name="arbitrationPriority" value="1" />
   <parameter name="baseAddress" value="0x05000000" />
   <parameter name="defaultConnection" value="false" />
@@ -3776,11 +4112,6 @@
  <connection
    kind="avalon_streaming"
    version="17.1"
-   start="fifo_dummy64_in.out"
-   end="fifo_dummy64_out.in" />
- <connection
-   kind="avalon_streaming"
-   version="17.1"
    start="dconv_fifo_dc.out"
    end="dconv_fifo_mem.in" />
  <connection
@@ -3816,27 +4147,26 @@
    start="clk_0.clk"
    end="spi_afe_relays.clk" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="dac_preamp.clk" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="DLEN.clk" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="led.clk" />
  <connection
    kind="clock"
    version="17.1"
    start="clk_0.clk"
    end="adc_fifo_mem.clk_in" />
- <connection
-   kind="clock"
-   version="17.1"
-   start="clk_0.clk"
-   end="fifo_dummy64_in.clk_in" />
- <connection
-   kind="clock"
-   version="17.1"
-   start="clk_0.clk"
-   end="fifo_dummy64_out.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="outfifo_0.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="infifo_0.clk_in" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="fifo_dummy.clk_in" />
  <connection
    kind="clock"
    version="17.1"
    start="clk_0.clk"
    end="dconv_fifo_mem.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="outfifo_1.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="firfifo_0.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="firfifo_1.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="firfifo_2.clk_in" />
+ <connection kind="clock" version="17.1" start="clk_0.clk" end="firfifo_3.clk_in" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="i2c_int.clock" />
  <connection kind="clock" version="17.1" start="clk_0.clk" end="i2c_ext.clock" />
  <connection
@@ -4300,6 +4630,8 @@
    version="17.1"
    start="clk_0.clk_reset"
    end="dac_preamp.reset" />
+ <connection kind="reset" version="17.1" start="clk_0.clk_reset" end="DLEN.reset" />
+ <connection kind="reset" version="17.1" start="clk_0.clk_reset" end="led.reset" />
  <connection
    kind="reset"
    version="17.1"
@@ -4309,12 +4641,12 @@
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_dummy64_in.reset_in" />
+   end="outfifo_0.reset_in" />
  <connection
    kind="reset"
    version="17.1"
    start="clk_0.clk_reset"
-   end="fifo_dummy64_out.reset_in" />
+   end="infifo_0.reset_in" />
  <connection
    kind="reset"
    version="17.1"
@@ -4325,6 +4657,31 @@
    version="17.1"
    start="clk_0.clk_reset"
    end="dconv_fifo_mem.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="outfifo_1.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="firfifo_0.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="firfifo_1.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="firfifo_2.reset_in" />
+ <connection
+   kind="reset"
+   version="17.1"
+   start="clk_0.clk_reset"
+   end="firfifo_3.reset_in" />
  <connection
    kind="reset"
    version="17.1"

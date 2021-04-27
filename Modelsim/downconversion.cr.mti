@@ -1,0 +1,64 @@
+D:/RC_Course_2021/Modelsim/sine.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/sine.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sine
+
+Top level modules:
+	sine
+
+} {} {}} D:/RC_Course_2021/Modelsim/cdc.v {1 {vlog -work work -stats=none D:/RC_Course_2021/Modelsim/cdc.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cdc
+
+Top level modules:
+	cdc
+
+} {} {}} D:/RC_Course_2021/Modelsim/sine_tb.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/sine_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sine_tb
+
+Top level modules:
+	sine_tb
+
+} {} {}} D:/RC_Course_2021/Modelsim/dpath.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/dpath.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dpath
+
+Top level modules:
+	dpath
+
+} {} {}} D:/RC_Course_2021/Modelsim/shreg.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/shreg.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shreg
+
+Top level modules:
+	shreg
+
+} {} {}} D:/RC_Course_2021/Modelsim/cnt.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/cnt.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module cnt
+
+Top level modules:
+	cnt
+
+} {} {}} D:/RC_Course_2021/Modelsim/dpath_tb.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/dpath_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module dpath_tb
+
+Top level modules:
+	dpath_tb
+
+} {} {}} D:/RC_Course_2021/Modelsim/fir_tb.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/fir_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fir_tb
+
+Top level modules:
+	fir_tb
+
+} {} {}} D:/RC_Course_2021/Modelsim/shreg_tb.sv {1 {vlog -work work -sv -stats=none D:/RC_Course_2021/Modelsim/shreg_tb.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module shreg_tb
+
+Top level modules:
+	shreg_tb
+
+} {} {}}
