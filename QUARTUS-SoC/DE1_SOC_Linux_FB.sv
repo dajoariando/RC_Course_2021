@@ -336,18 +336,19 @@ module DE1_SOC_Linux_FB(
 	parameter UNR = 4;
 	
 	wire [DWIDTH-1:0]				din [UNR];
-	wire [DWIDTH+1+CWIDTH-1:0]	firsum;
-	reg [CWIDTH-1:0]				coeff[37] = '{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37};
-
+	wire [31:0]	firsum;
+	// reg [CWIDTH-1:0]				coeff[37] = '{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37};
+	reg [CWIDTH-1:0]				coeff[37] = '{144, 115, 158, 207, 263, 325, 392, 462, 535, 609, 682, 752, 817, 876, 926, 968, 998, 1016, 1023, 1016, 998, 968, 926, 876, 817, 752, 682, 609, 535, 462, 392, 325, 263, 207, 158, 115, 144};
+	
 	wire FIFO_VALID;
 	wire SYNC_READY;
 	wire OUT_VALID;
 	wire [31:0] DLEN;
 	
-	wire [DWIDTH+1+CWIDTH-1:0] firout0;
-	wire [DWIDTH+1+CWIDTH-1:0] firout1;
-	wire [DWIDTH+1+CWIDTH-1:0] firout2;
-	wire [DWIDTH+1+CWIDTH-1:0] firout3;
+	wire [31:0] firout0;
+	wire [31:0] firout1;
+	wire [31:0] firout2;
+	wire [31:0] firout3;
 	
 	wire [3:0] dummy;
 	
@@ -659,7 +660,8 @@ module DE1_SOC_Linux_FB(
         .firfifo_2_data                            (firout2),                            //                            .data
         
 		  .firfifo_3_valid                           (OUT_VALID),                           //                   firfifo_3.valid
-        .firfifo_3_data                            (firout3) 
+        .firfifo_3_data                            (firout3) ,
+		        .fifo_global_rst_reset                     (sys_rst)                      //             fifo_global_rst.reset
 	
 	);
 	

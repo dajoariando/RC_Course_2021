@@ -1,3 +1,5 @@
+`timescale 1ps / 1ps
+
 module sine_tb ();
 	
 	// parameters are referenced in MHz for calculation

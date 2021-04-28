@@ -1,3 +1,5 @@
+`timescale 1ps / 1ps
+
 module sine
 # (
 	parameter DWIDTH = 14,

@@ -1,0 +1,9 @@
+set_global_assignment -name IP_TOOL_NAME "PARALLEL_ADD"
+set_global_assignment -name IP_TOOL_VERSION "17.1"
+set_global_assignment -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "add_prl_32b.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "add_prl_32b.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "add_prl_32b_inst.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "add_prl_32b_bb.v"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "add_prl_32b.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "add_prl_32b.cmp"]

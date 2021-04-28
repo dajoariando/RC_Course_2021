@@ -1,4 +1,4 @@
-
+`timescale 1ps / 1ps
 
 module dpath_tb ();
 	
@@ -16,7 +16,11 @@ module dpath_tb ();
 	
 	// data input/output
 	reg [DWIDTH-1:0]	din [UNR];
-	wire	[DWIDTH+1+CWIDTH-1:0] firsum;
+	wire	[31:0] firsum;
+	wire	[31:0] firout0;
+	wire	[31:0] firout1;
+	wire	[31:0] firout2;
+	wire	[31:0] firout3;
 
 	
 	// filter coefficient
@@ -49,6 +53,12 @@ module dpath_tb ();
 		// data input
 		.din (din),
 		.firsum (firsum),
+		
+		// for testing only
+		.firout0(firout0),
+		.firout1(firout1),
+		.firout2(firout2),
+		.firout3(firout3),
 
 		
 		// filter coefficient
@@ -82,7 +92,7 @@ module dpath_tb ();
 		EN	= 0;
 		CLK = 1;
 		RST = 1;
-		DLEN = 10;
+		DLEN = 100;
 		FIFO_VALID = 0;
 		ASYNC_START = 0;
 		#(clockticks*2) RST = 0;
@@ -90,9 +100,63 @@ module dpath_tb ();
 		#(clockticks*1) ASYNC_START = 1;
 		#(clockticks*1) EN = 1;
 		#(clockticks*10);
-		#(clockticks*2) din = '{0,0,1,0};	// '{1,2,3,4};
+		#(clockticks*2) din = '{1,0,1,0};	// '{1,2,3,4}; // bit-0, bit-1, bit-2, bit-3
 		FIFO_VALID = 1'b1;
-		// #(clockticks*2) din = '{1,1,1,1};	// '{5,6,7,8};
+		
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+									
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+								
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+								
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		#(clockticks*2) din = '{1,0,1,0};
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		// #(clockticks*2) din = '{0,0,1,0};	// '{5,6,7,8};
 		// #(clockticks*2) din = '{1,1,1,1};	// '{9,10,11,12};
 		// #(clockticks*2) din = '{1,1,1,1};	// '{13,14,15,16};
 		// #(clockticks*2) din = '{1,1,1,1};	// '{17,18,19,20};

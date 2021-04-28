@@ -1,3 +1,5 @@
+`timescale 1ps / 1ps
+
 module shreg
 #(
 	parameter DWIDTH = 15,
@@ -10,8 +12,8 @@ module shreg
 	input RST,
 	
 	// data
-	input [14:0]	din [UNR],
-	output reg [14:0]	dout [BUFLEN]
+	input signed [14:0]	din [UNR],
+	output reg signed [14:0]	dout [BUFLEN]
 );
 	
 	genvar i;

@@ -1,3 +1,5 @@
+`timescale 1ps / 1ps
+
 module cnt
 (
 	// control signals
@@ -101,6 +103,7 @@ module cnt
 				
 				S1 : //
 				begin
+					// OUT_VALID <= 1'b1; // DELETE THIS WHEN DONE
 					DONE <= 1'b0;
 					SYNC_READY <= 1'b1;
 					if (FIFO_VALID)
@@ -109,6 +112,7 @@ module cnt
 				
 				S2 : //
 				begin
+					// OUT_VALID <= 1'b1; // DELETE THIS WHEN DONE
 					OUT_VALID_CNT <= OUT_VALID_CNT + 1'b1;
 					if (OUT_VALID_CNT[31])
 						State <= S3;

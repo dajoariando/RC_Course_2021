@@ -1,0 +1,22 @@
+add_prl	add_prl_inst (
+	.data0x ( data0x_sig ),
+	.data10x ( data10x_sig ),
+	.data11x ( data11x_sig ),
+	.data12x ( data12x_sig ),
+	.data13x ( data13x_sig ),
+	.data14x ( data14x_sig ),
+	.data15x ( data15x_sig ),
+	.data16x ( data16x_sig ),
+	.data17x ( data17x_sig ),
+	.data18x ( data18x_sig ),
+	.data1x ( data1x_sig ),
+	.data2x ( data2x_sig ),
+	.data3x ( data3x_sig ),
+	.data4x ( data4x_sig ),
+	.data5x ( data5x_sig ),
+	.data6x ( data6x_sig ),
+	.data7x ( data7x_sig ),
+	.data8x ( data8x_sig ),
+	.data9x ( data9x_sig ),
+	.result ( result_sig )
+	);

@@ -1,17 +1,17 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst soc_system.outfifo_0 -pg 1 -lvl 5 -y 650
+preplace inst soc_system.outfifo_0 -pg 1 -lvl 5 -y 1000
 preplace inst soc_system.master_non_sec.p2b_adapter -pg 1
-preplace inst soc_system.clk_0 -pg 1 -lvl 2 -y 790
-preplace inst soc_system.outfifo_1 -pg 1 -lvl 5 -y 750
+preplace inst soc_system.clk_0 -pg 1 -lvl 2 -y 1040
+preplace inst soc_system.outfifo_1 -pg 1 -lvl 5 -y 1110
 preplace inst soc_system.hps_0.clk_0 -pg 1
-preplace inst soc_system.gp_pll -pg 1 -lvl 7 -y 1750
-preplace inst soc_system.led -pg 1 -lvl 5 -y 330
-preplace inst soc_system.ctrl_out -pg 1 -lvl 7 -y 870
+preplace inst soc_system.led -pg 1 -lvl 5 -y 540
+preplace inst soc_system.gp_pll -pg 1 -lvl 7 -y 2000
+preplace inst soc_system.ctrl_out -pg 1 -lvl 7 -y 1120
 preplace inst soc_system.master_secure.clk_rst -pg 1
 preplace inst soc_system.hps_0.axi_sdram -pg 1
 preplace inst soc_system -pg 1 -lvl 1 -y 40 -regy -20
-preplace inst soc_system.master_non_sec -pg 1 -lvl 5 -y 930
+preplace inst soc_system.master_non_sec -pg 1 -lvl 5 -y 1320
 preplace inst soc_system.hps_0.timer0 -pg 1
 preplace inst soc_system.hps_0.timer1 -pg 1
 preplace inst soc_system.hps_0.i2c0 -pg 1
@@ -34,93 +34,109 @@ preplace inst soc_system.hps_0.arm_a9_1 -pg 1
 preplace inst soc_system.hps_0.uart0 -pg 1
 preplace inst soc_system.hps_0.uart1 -pg 1
 preplace inst soc_system.master_secure.transacto -pg 1
-preplace inst soc_system.master_secure -pg 1 -lvl 3 -y 760
+preplace inst soc_system.master_secure -pg 1 -lvl 3 -y 1020
 preplace inst soc_system.hps_0.spim0 -pg 1
 preplace inst soc_system.master_secure.b2p_adapter -pg 1
 preplace inst soc_system.hps_0.spim1 -pg 1
 preplace inst soc_system.hps_0.timer -pg 1
 preplace inst soc_system.hps_0.sysmgr -pg 1
-preplace inst soc_system.DLEN -pg 1 -lvl 5 -y 430
+preplace inst soc_system.DLEN -pg 1 -lvl 5 -y 640
 preplace inst soc_system.master_secure.jtag_phy_embedded_in_jtag_master -pg 1
 preplace inst soc_system.master_secure.clk_src -pg 1
 preplace inst soc_system.hps_0.f2s_periph_ref_clk -pg 1
 preplace inst soc_system.hps_0.l3regs -pg 1
 preplace inst soc_system.hps_0.sdmmc -pg 1
 preplace inst soc_system.hps_0.axi_ocram -pg 1
-preplace inst soc_system.sysid_qsys -pg 1 -lvl 7 -y 2070
-preplace inst soc_system.sdram -pg 1 -lvl 7 -y 2150
+preplace inst soc_system.sysid_qsys -pg 1 -lvl 7 -y 2320
+preplace inst soc_system.sdram -pg 1 -lvl 7 -y 2400
 preplace inst soc_system.master_non_sec.fifo -pg 1
-preplace inst soc_system.ctrl_in -pg 1 -lvl 7 -y 270
+preplace inst soc_system.dc_infifo_0 -pg 1 -lvl 3 -y 770
+preplace inst soc_system.ctrl_in -pg 1 -lvl 7 -y 520
 preplace inst soc_system.hps_0.arm_gic_0 -pg 1
-preplace inst soc_system.alt_vip_vfr_vga -pg 1 -lvl 3 -y 480
+preplace inst soc_system.alt_vip_vfr_vga -pg 1 -lvl 3 -y 520
 preplace inst soc_system.hps_0.rstmgr -pg 1
 preplace inst soc_system.hps_0.usb0 -pg 1
 preplace inst soc_system.hps_0.scu -pg 1
+preplace inst soc_system.fifo_global_rst -pg 1 -lvl 3 -y 890
+preplace inst soc_system.firfifo_0 -pg 1 -lvl 5 -y 30
 preplace inst soc_system.hps_0.usb1 -pg 1
 preplace inst soc_system.master_secure.p2b_adapter -pg 1
 preplace inst soc_system.master_non_sec.clk_src -pg 1
+preplace inst soc_system.firfifo_1 -pg 1 -lvl 5 -y 190
 preplace inst soc_system.hps_0.hps_io -pg 1
-preplace inst soc_system.nmr_sys_pll -pg 1 -lvl 7 -y 150
+preplace inst soc_system.firfifo_2 -pg 1 -lvl 5 -y 310
+preplace inst soc_system.nmr_sys_pll -pg 1 -lvl 7 -y 400
 preplace inst soc_system.master_non_sec.timing_adt -pg 1
+preplace inst soc_system.firfifo_3 -pg 1 -lvl 5 -y 740
 preplace inst soc_system.hps_0.nand0 -pg 1
 preplace inst soc_system.master_secure.b2p -pg 1
 preplace inst soc_system.master_non_sec.p2b -pg 1
 preplace inst soc_system.hps_0.gmac0 -pg 1
-preplace inst soc_system.hps_0 -pg 1 -lvl 4 -y 920
+preplace inst soc_system.hps_0 -pg 1 -lvl 4 -y 1170
 preplace inst soc_system.hps_0.hps_io.border -pg 1
 preplace inst soc_system.hps_0.gmac1 -pg 1
 preplace inst soc_system.hps_0.eosc1 -pg 1
 preplace inst soc_system.hps_0.fpgamgr -pg 1
 preplace inst soc_system.master_secure.timing_adt -pg 1
+preplace inst soc_system.jtag_uart -pg 1 -lvl 7 -y 1640
 preplace inst soc_system.hps_0.dcan0 -pg 1
 preplace inst soc_system.hps_0.eosc2 -pg 1
-preplace inst soc_system.jtag_uart -pg 1 -lvl 7 -y 1390
-preplace inst soc_system.alt_vip_itc_0 -pg 1 -lvl 4 -y 650
+preplace inst soc_system.alt_vip_itc_0 -pg 1 -lvl 4 -y 950
 preplace inst soc_system.master_secure.fifo -pg 1
 preplace inst soc_system.master_non_sec.transacto -pg 1
 preplace inst soc_system.hps_0.fpga_interfaces -pg 1
 preplace inst soc_system.hps_0.dcan1 -pg 1
 preplace inst soc_system.hps_0.f2s_sdram_ref_clk -pg 1
-preplace inst soc_system.infifo_0 -pg 1 -lvl 5 -y 530
+preplace inst soc_system.infifo_0 -pg 1 -lvl 5 -y 880
 preplace inst soc_system.master_non_sec.b2p_adapter -pg 1
-preplace inst soc_system.nmr_sys_pll_reconfig -pg 1 -lvl 7 -y 30
+preplace inst soc_system.nmr_sys_pll_reconfig -pg 1 -lvl 7 -y 280
+preplace inst soc_system.dc_outfifo_0 -pg 1 -lvl 6 -y 30
 preplace inst soc_system.hps_0.dma -pg 1
 preplace inst soc_system.hps_0.sdrctl -pg 1
 preplace inst soc_system.master_non_sec.b2p -pg 1
+preplace inst soc_system.dc_outfifo_1 -pg 1 -lvl 6 -y 190
 preplace inst soc_system.master_secure.p2b -pg 1
 preplace inst soc_system.hps_0.bridges -pg 1
-preplace inst soc_system.switches -pg 1 -lvl 7 -y 1970
+preplace inst soc_system.switches -pg 1 -lvl 7 -y 2220
 preplace inst soc_system.master_non_sec.jtag_phy_embedded_in_jtag_master -pg 1
-preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)nmr_sys_pll.outclk0,(MASTER)soc_system.nmr_sys_pll_outclk) 1 7 1 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)alt_vip_itc_0.clocked_video,(SLAVE)soc_system.alt_vip_itc_0_clocked_video) 1 0 4 NJ 660 NJ 660 NJ 660 NJ
 preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.pll_vga_clk65,(MASTER)gp_pll.outclk1) 1 7 1 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.clk,(SLAVE)clk_0.clk_in) 1 0 2 NJ 800 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 2 NJ 820 NJ
-preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)infifo_0.clk_in,(SLAVE)master_secure.clk,(SLAVE)sdram.clk,(MASTER)clk_0.clk,(SLAVE)led.clk,(SLAVE)jtag_uart.clk,(SLAVE)alt_vip_vfr_vga.clock_master,(SLAVE)master_non_sec.clk,(SLAVE)ctrl_in.clk,(SLAVE)DLEN.clk,(SLAVE)hps_0.h2f_lw_axi_clock,(SLAVE)outfifo_1.clk_in,(SLAVE)nmr_sys_pll_reconfig.mgmt_clk,(SLAVE)ctrl_out.clk,(SLAVE)gp_pll.refclk,(SLAVE)nmr_sys_pll.refclk,(SLAVE)sysid_qsys.clk,(SLAVE)switches.clk,(SLAVE)hps_0.f2h_axi_clock,(SLAVE)hps_0.h2f_axi_clock,(SLAVE)outfifo_0.clk_in) 1 2 5 560 720 1050 760 1540 280 NJ 280 2080
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)led.external_connection,(SLAVE)soc_system.led) 1 0 5 NJ 360 NJ 360 NJ 360 NJ 360 NJ
-preplace netloc INTERCONNECT<net_container>soc_system</net_container>(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)alt_vip_vfr_vga.avalon_slave,(SLAVE)sysid_qsys.control_slave,(SLAVE)ctrl_out.s1,(MASTER)master_non_sec.master,(MASTER)hps_0.h2f_lw_axi_master,(SLAVE)ctrl_in.s1,(SLAVE)nmr_sys_pll_reconfig.mgmt_avalon_slave) 1 2 5 600 880 NJ 880 1480 890 1840 920 2060
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)gp_pll.locked,(SLAVE)soc_system.pll_vga_locked) 1 0 7 NJ 1760 NJ 1760 NJ 1760 NJ 1760 NJ 1760 NJ 1760 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)ctrl_out.external_connection,(SLAVE)soc_system.ctrl_out) 1 0 7 NJ 860 NJ 860 NJ 860 NJ 860 NJ 860 NJ 900 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)nmr_sys_pll.locked,(SLAVE)soc_system.nmr_sys_pll_locked) 1 0 7 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ 160 NJ
-preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)jtag_uart.irq,(MASTER)hps_0.f2h_irq0,(SLAVE)alt_vip_vfr_vga.interrupt_sender) 1 2 5 640 840 NJ 840 1500 1030 NJ 1030 2040
-preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)nmr_sys_pll_reconfig.reconfig_to_pll,(SLAVE)nmr_sys_pll.reconfig_to_pll) 1 6 1 2140
-preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)alt_vip_itc_0.is_clk_rst,(MASTER)gp_pll.outclk0,(SLAVE)alt_vip_vfr_vga.clock_reset) 1 2 6 620 700 1070 1380 NJ 1380 NJ 1380 NJ 1380 2700
-preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)gp_pll.reset,(SLAVE)master_secure.clk_reset,(SLAVE)nmr_sys_pll_reconfig.mgmt_reset,(MASTER)clk_0.clk_reset,(SLAVE)jtag_uart.reset,(SLAVE)ctrl_in.reset,(SLAVE)ctrl_out.reset,(SLAVE)sdram.reset,(SLAVE)outfifo_1.reset_in,(SLAVE)switches.reset,(SLAVE)outfifo_0.reset_in,(SLAVE)DLEN.reset,(SLAVE)alt_vip_vfr_vga.clock_master_reset,(SLAVE)led.reset,(SLAVE)alt_vip_vfr_vga.clock_reset_reset,(SLAVE)sysid_qsys.reset,(SLAVE)alt_vip_itc_0.is_clk_rst_reset,(SLAVE)infifo_0.reset_in,(SLAVE)master_non_sec.clk_reset) 1 2 5 580 680 1090 640 1560 320 NJ 320 2100
-preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.sdram_clk,(MASTER)gp_pll.outclk3) 1 7 1 NJ
-preplace netloc FAN_IN<net_container>soc_system</net_container>(MASTER)alt_vip_vfr_vga.avalon_master,(MASTER)master_secure.master,(SLAVE)hps_0.f2h_axi_slave) 1 3 1 1030
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.memory,(SLAVE)hps_0.memory) 1 0 4 NJ 990 NJ 990 NJ 990 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)sdram.wire,(SLAVE)soc_system.sdram_wire) 1 0 7 NJ 2220 NJ 2220 NJ 2220 NJ 2220 NJ 2220 NJ 2220 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.nmr_sys_pll_reset,(SLAVE)nmr_sys_pll.reset) 1 0 7 NJ 240 NJ 240 NJ 240 NJ 240 NJ 240 NJ 240 NJ
-preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)nmr_sys_pll_reconfig.reconfig_from_pll,(SLAVE)nmr_sys_pll.reconfig_from_pll) 1 6 1 2120
-preplace netloc FAN_OUT<net_container>soc_system</net_container>(MASTER)hps_0.h2f_axi_master,(SLAVE)DLEN.s1,(SLAVE)infifo_0.in_csr,(SLAVE)infifo_0.out,(SLAVE)sdram.s1,(SLAVE)outfifo_1.in,(SLAVE)switches.s1,(SLAVE)led.s1,(SLAVE)outfifo_1.in_csr,(SLAVE)outfifo_0.in,(SLAVE)outfifo_0.in_csr) 1 4 3 1520 2040 NJ 2040 2040
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.infifo_0,(SLAVE)infifo_0.in) 1 0 5 NJ 630 NJ 630 NJ 630 NJ 560 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.outfifo_0,(MASTER)outfifo_0.out) 1 5 3 NJ 680 NJ 680 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.ctrl_in,(SLAVE)ctrl_in.external_connection) 1 0 7 NJ 260 NJ 260 NJ 260 NJ 260 NJ 300 NJ 300 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.hps_0_hps_io,(SLAVE)hps_0.hps_io) 1 0 4 NJ 970 NJ 970 NJ 970 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.dlen,(SLAVE)DLEN.external_connection) 1 0 5 NJ 460 NJ 460 NJ 460 NJ 460 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)outfifo_1.out,(MASTER)soc_system.outfifo_1) 1 5 3 NJ 780 NJ 780 NJ
-preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.hps_0_h2f_reset,(MASTER)hps_0.h2f_reset) 1 4 4 NJ 1010 NJ 1010 NJ 1010 NJ
-preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)alt_vip_itc_0.din,(MASTER)alt_vip_vfr_vga.avalon_streaming_source) 1 3 1 990
-preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)switches.external_connection,(SLAVE)soc_system.switches) 1 0 7 NJ 2000 NJ 2000 NJ 2000 NJ 2000 NJ 2000 NJ 2000 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.clk,(SLAVE)clk_0.clk_in) 1 0 2 NJ 1050 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)dc_outfifo_0.in,(MASTER)outfifo_0.out) 1 5 1 1900
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)led.external_connection,(SLAVE)soc_system.led) 1 0 5 NJ 420 NJ 420 NJ 420 NJ 420 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)ctrl_in.external_connection,(SLAVE)soc_system.ctrl_in) 1 0 7 NJ 510 NJ 510 NJ 510 NJ 510 NJ 510 NJ 550 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)clk_0.clk_in_reset,(SLAVE)soc_system.reset) 1 0 2 NJ 1070 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)gp_pll.locked,(SLAVE)soc_system.pll_vga_locked) 1 0 7 NJ 2010 NJ 2010 NJ 2010 NJ 2010 NJ 2010 NJ 2010 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)ctrl_out.external_connection,(SLAVE)soc_system.ctrl_out) 1 0 7 NJ 1130 NJ 1130 NJ 1130 NJ 1130 NJ 1260 NJ 1150 NJ
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)dc_outfifo_0.in_clk,(SLAVE)ctrl_out.clk,(SLAVE)outfifo_1.clk_in,(SLAVE)nmr_sys_pll.refclk,(SLAVE)switches.clk,(SLAVE)hps_0.f2h_axi_clock,(SLAVE)firfifo_3.clk_in,(SLAVE)dc_outfifo_0.out_clk,(SLAVE)dc_infifo_0.in_clk,(SLAVE)DLEN.clk,(SLAVE)gp_pll.refclk,(SLAVE)ctrl_in.clk,(SLAVE)alt_vip_vfr_vga.clock_master,(SLAVE)dc_infifo_0.out_clk,(MASTER)clk_0.clk,(SLAVE)outfifo_0.clk_in,(SLAVE)led.clk,(SLAVE)dc_outfifo_1.out_clk,(SLAVE)hps_0.h2f_axi_clock,(SLAVE)sysid_qsys.clk,(SLAVE)infifo_0.clk_in,(SLAVE)master_secure.clk,(SLAVE)jtag_uart.clk,(SLAVE)firfifo_0.clk_in,(SLAVE)firfifo_1.clk_in,(SLAVE)hps_0.h2f_lw_axi_clock,(SLAVE)sdram.clk,(SLAVE)firfifo_2.clk_in,(SLAVE)nmr_sys_pll_reconfig.mgmt_clk,(SLAVE)fifo_global_rst.clk,(SLAVE)dc_outfifo_1.in_clk,(SLAVE)master_non_sec.clk) 1 2 5 560 1240 1110 1330 1600 160 1980 320 2230
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)dc_infifo_0.in,(SLAVE)soc_system.infifo_0) 1 0 3 NJ 780 NJ 780 NJ
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)jtag_uart.irq,(MASTER)hps_0.f2h_irq0,(SLAVE)alt_vip_vfr_vga.interrupt_sender) 1 2 5 620 710 NJ 630 1540 1690 NJ 1690 N
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)nmr_sys_pll_reconfig.reconfig_to_pll,(SLAVE)nmr_sys_pll.reconfig_to_pll) 1 6 1 2290
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)infifo_0.in,(MASTER)dc_infifo_0.out) 1 3 2 N 820 NJ
+preplace netloc INTERCONNECT<net_container>soc_system</net_container>(SLAVE)dc_outfifo_1.in_clk_reset,(SLAVE)dc_outfifo_0.in_clk_reset,(SLAVE)dc_outfifo_1.out_clk_reset,(SLAVE)alt_vip_itc_0.is_clk_rst_reset,(SLAVE)firfifo_3.reset_in,(SLAVE)master_non_sec.clk_reset,(SLAVE)ctrl_out.reset,(MASTER)clk_0.clk_reset,(SLAVE)dc_infifo_0.out_clk_reset,(SLAVE)switches.reset,(SLAVE)alt_vip_vfr_vga.clock_master_reset,(SLAVE)gp_pll.reset,(SLAVE)alt_vip_vfr_vga.clock_reset_reset,(SLAVE)dc_infifo_0.in_clk_reset,(SLAVE)sysid_qsys.reset,(SLAVE)led.reset,(SLAVE)sdram.reset,(SLAVE)jtag_uart.reset,(SLAVE)DLEN.reset,(SLAVE)outfifo_0.reset_in,(SLAVE)firfifo_1.reset_in,(SLAVE)infifo_0.reset_in,(SLAVE)master_secure.clk_reset,(MASTER)fifo_global_rst.out_reset,(SLAVE)nmr_sys_pll_reconfig.mgmt_reset,(SLAVE)dc_outfifo_0.out_clk_reset,(SLAVE)firfifo_2.reset_in,(SLAVE)outfifo_1.reset_in,(SLAVE)ctrl_in.reset,(SLAVE)firfifo_0.reset_in) 1 2 5 580 980 1070 900 1580 180 2000 360 2250
+preplace netloc INTERCONNECT<net_container>soc_system</net_container>(SLAVE)alt_vip_vfr_vga.avalon_slave,(SLAVE)sysid_qsys.control_slave,(MASTER)hps_0.h2f_lw_axi_master,(MASTER)master_non_sec.master,(SLAVE)ctrl_in.s1,(SLAVE)nmr_sys_pll_reconfig.mgmt_avalon_slave,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)ctrl_out.s1) 1 2 5 600 690 NJ 610 1480 1710 1980 340 2210
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)firfifo_0.in,(SLAVE)soc_system.firfifo_0) 1 0 5 NJ 60 NJ 60 NJ 60 NJ 60 NJ
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(SLAVE)firfifo_0.out,(SLAVE)firfifo_1.out,(SLAVE)sdram.s1,(SLAVE)firfifo_0.in_csr,(SLAVE)infifo_0.in_csr,(SLAVE)firfifo_2.out,(SLAVE)led.s1,(MASTER)hps_0.h2f_axi_master,(SLAVE)outfifo_1.in,(SLAVE)DLEN.s1,(SLAVE)firfifo_2.in_csr,(SLAVE)firfifo_3.in_csr,(SLAVE)outfifo_0.in,(SLAVE)outfifo_0.in_csr,(SLAVE)switches.s1,(SLAVE)outfifo_1.in_csr,(SLAVE)infifo_0.out,(SLAVE)firfifo_3.out,(SLAVE)firfifo_1.in_csr) 1 4 3 1640 1280 NJ 1280 2190
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.sdram_wire,(SLAVE)sdram.wire) 1 0 7 NJ 2470 NJ 2470 NJ 2470 NJ 2470 NJ 2470 NJ 2470 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.switches,(SLAVE)switches.external_connection) 1 0 7 NJ 2250 NJ 2250 NJ 2250 NJ 2250 NJ 2250 NJ 2250 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.memory,(SLAVE)hps_0.memory) 1 0 4 NJ 1280 NJ 1280 NJ 1280 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)fifo_global_rst.in_reset,(SLAVE)soc_system.fifo_global_rst) 1 0 3 NJ 920 NJ 920 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.alt_vip_itc_0_clocked_video,(SLAVE)alt_vip_itc_0.clocked_video) 1 0 4 NJ 960 NJ 960 NJ 960 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)nmr_sys_pll.reset,(SLAVE)soc_system.nmr_sys_pll_reset) 1 0 7 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ 490 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.nmr_sys_pll_outclk,(MASTER)nmr_sys_pll.outclk0) 1 7 1 NJ
+preplace netloc FAN_OUT<net_container>soc_system</net_container>(MASTER)gp_pll.outclk0,(SLAVE)alt_vip_vfr_vga.clock_reset,(SLAVE)alt_vip_itc_0.is_clk_rst) 1 2 6 640 670 1030 800 NJ 870 NJ 950 NJ 950 2700
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)nmr_sys_pll_reconfig.reconfig_from_pll,(SLAVE)nmr_sys_pll.reconfig_from_pll) 1 6 1 2270
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)gp_pll.outclk3,(MASTER)soc_system.sdram_clk) 1 7 1 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.nmr_sys_pll_locked,(SLAVE)nmr_sys_pll.locked) 1 0 7 NJ 440 NJ 440 NJ 440 NJ 440 NJ 440 NJ 410 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.outfifo_0,(MASTER)dc_outfifo_0.out) 1 6 2 NJ 80 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)firfifo_1.in,(SLAVE)soc_system.firfifo_1) 1 0 5 NJ 220 NJ 220 NJ 220 NJ 220 NJ
+preplace netloc FAN_IN<net_container>soc_system</net_container>(MASTER)alt_vip_vfr_vga.avalon_master,(SLAVE)hps_0.f2h_axi_slave,(MASTER)master_secure.master) 1 3 1 1050
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)hps_0.h2f_reset,(MASTER)soc_system.hps_0_h2f_reset) 1 4 4 NJ 1240 NJ 1110 NJ 1110 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.firfifo_2,(SLAVE)firfifo_2.in) 1 0 5 NJ 340 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(MASTER)outfifo_1.out,(SLAVE)dc_outfifo_1.in) 1 5 1 1940
+preplace netloc POINT_TO_POINT<net_container>soc_system</net_container>(SLAVE)alt_vip_itc_0.din,(MASTER)alt_vip_vfr_vga.avalon_streaming_source) 1 3 1 1090
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)soc_system.firfifo_3,(SLAVE)firfifo_3.in) 1 0 5 NJ 740 NJ 740 NJ 740 NJ 650 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)DLEN.external_connection,(SLAVE)soc_system.dlen) 1 0 5 NJ 760 NJ 760 NJ 760 NJ 670 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(SLAVE)hps_0.hps_io,(SLAVE)soc_system.hps_0_hps_io) 1 0 4 NJ 1220 NJ 1220 NJ 1220 NJ
+preplace netloc EXPORT<net_container>soc_system</net_container>(MASTER)soc_system.outfifo_1,(MASTER)dc_outfifo_1.out) 1 6 2 NJ 240 NJ
 levelinfo -pg 1 0 180 2860
-levelinfo -hier soc_system 190 210 390 740 1290 1680 2020 2520 2720
+levelinfo -hier soc_system 190 210 390 740 1290 1740 2050 2520 2720

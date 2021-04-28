@@ -1,3 +1,5 @@
+`timescale 1ps / 1ps
+
 module shreg_tb ();
 
 parameter DWIDTH = 14;

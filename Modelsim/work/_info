@@ -8,240 +8,303 @@ z2
 !i10f 100
 cModel Technology
 dC:/intelFPGA_lite/17.1
-vcdc
-Z0 !s110 1619516870
+vadd
+Z0 !s110 1619565099
 !i10b 1
-!s100 >g]K@ZdXG6^GK1ca1=7c`2
-Ilm]XXc`;h:7F:Q@I[QP1;0
+!s100 ZeMQ87aHifV5cofTC308m0
+IA:9dP^O^Tb;V<R8l?AL[S3
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dD:/RC_Course_2021/Modelsim
-w1619426179
-8D:/RC_Course_2021/Modelsim/cdc.v
-FD:/RC_Course_2021/Modelsim/cdc.v
-L0 3
-Z3 OV;L;10.5b;63
+w1619543514
+8D:/RC_Course_2021/Modelsim/Altera_IP/add.v
+FD:/RC_Course_2021/Modelsim/Altera_IP/add.v
+Z3 L0 39
+Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1619516870.000000
+Z5 !s108 1619565099.000000
+!s107 D:/RC_Course_2021/Modelsim/Altera_IP/add.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/RC_Course_2021/Modelsim/Altera_IP/add.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+vadd_prl
+R0
+!i10b 1
+!s100 mMz:E?W`5Im8`^K?J7DZ60
+I6:QaGYB2BW:YiQjM]Y>A21
+R1
+R2
+w1619564918
+8D:/RC_Course_2021/Modelsim/Altera_IP/add_prl.v
+FD:/RC_Course_2021/Modelsim/Altera_IP/add_prl.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/RC_Course_2021/Modelsim/Altera_IP/add_prl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/RC_Course_2021/Modelsim/Altera_IP/add_prl.v|
+!i113 1
+R6
+R7
+vcdc
+R0
+!i10b 1
+!s100 4C8j0J9AiPRie5Pe1<?=n2
+ITc6gOBVMXX=]Jd?VjAalU0
+R1
+R2
+w1619545660
+8D:/RC_Course_2021/Modelsim/cdc.v
+FD:/RC_Course_2021/Modelsim/cdc.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
 !s107 D:/RC_Course_2021/Modelsim/cdc.v|
 !s90 -reportprogress|300|-work|work|-stats=none|D:/RC_Course_2021/Modelsim/cdc.v|
 !i113 1
-o-work work
-Z5 tCvgOpt 0
+R6
+R7
 vcnt
-Z6 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z8 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R0
 !i10b 1
-!s100 DF5R8inj9]?Sb>_EX=:8S2
-I14n:8nmHdmBNWY::YkHU00
+!s100 aDU?YY:ijGbAhZ15eD?<L3
+ILPffUGnXMZMJJ4CDHnLQz1
 R1
 !s105 cnt_sv_unit
 S1
 R2
-w1619429077
+w1619562532
 8D:/RC_Course_2021/Modelsim/cnt.sv
 FD:/RC_Course_2021/Modelsim/cnt.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 D:/RC_Course_2021/Modelsim/cnt.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/cnt.sv|
 !i113 1
-Z7 o-work work -sv
-R5
+Z9 o-work work -sv
+R7
 vdpath
-R6
+R8
 R0
 !i10b 1
-!s100 eVUQ^MQP`c8MZ^PkII^030
-I^m_M7fJKGQdh8gb:4ga@41
+!s100 =2C@e:ccbM9ZH_]RzK=R;1
+I<?STjh2?^3:3=5KQEHQYS3
 R1
 !s105 dpath_sv_unit
 S1
 R2
-w1619515696
+w1619561617
 8D:/RC_Course_2021/Modelsim/dpath.sv
 FD:/RC_Course_2021/Modelsim/dpath.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 D:/RC_Course_2021/Modelsim/dpath.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/dpath.sv|
 !i113 1
+R9
 R7
-R5
 vdpath_tb
-R6
+R8
 R0
 !i10b 1
-!s100 K;;eb9P5TdIMF9eWeDOeJ1
-Id9C?Q93zGQ:M90IJ5TP^>2
+!s100 :e^C0OYPhC<Z:cYGIcDfV0
+If`fJO1OI7N0jMZQbBBNP^3
 R1
 !s105 dpath_tb_sv_unit
 S1
 R2
-w1619513172
+w1619560989
 8D:/RC_Course_2021/Modelsim/dpath_tb.sv
 FD:/RC_Course_2021/Modelsim/dpath_tb.sv
 L0 3
-R3
+R4
 r1
 !s85 0
 31
-R4
+R5
 !s107 D:/RC_Course_2021/Modelsim/dpath_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/dpath_tb.sv|
 !i113 1
+R9
 R7
-R5
 vfir
-R6
-!s110 1619516868
+R8
+Z10 !s110 1619565098
 !i10b 1
-!s100 U2J@Fm52i0Lk5V]NE8nHb0
-In[WH44BNjA[fNECfbgf:d1
+!s100 RAMMinBl=YUPnfzU1QLE@3
+IW9ae`M;]OICM]WhBR_4fo3
 R1
 !s105 fir_sv_unit
 S1
 R2
-w1619516864
+w1619565068
 8D:/RC_Course_2021/Modelsim/fir.sv
 FD:/RC_Course_2021/Modelsim/fir.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-!s108 1619516868.000000
+Z11 !s108 1619565098.000000
 !s107 D:/RC_Course_2021/Modelsim/fir.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/fir.sv|
 !i113 1
+R9
 R7
-R5
 vfir_tb
-R6
-Z8 !s110 1619516869
+R8
+R10
 !i10b 1
-!s100 DD0GYKN98U9<5_g_MzGkJ3
-I_RVSNOgR7mMS33WUPOY0i2
+!s100 >JAJW5WN6Z[453V9ECWo11
+IZn9g;h8e:59?>mjoPlz8T1
 R1
 !s105 fir_tb_sv_unit
 S1
 R2
-w1619160895
+w1619545667
 8D:/RC_Course_2021/Modelsim/fir_tb.sv
 FD:/RC_Course_2021/Modelsim/fir_tb.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-Z9 !s108 1619516869.000000
+R11
 !s107 D:/RC_Course_2021/Modelsim/fir_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/fir_tb.sv|
 !i113 1
+R9
 R7
-R5
-vshreg
-R6
-R8
+vmult
+R0
 !i10b 1
-!s100 giK9]d7maYHRK[=YJi_?93
-IE6KZ0lFV2IYRl=aOe1EmH2
+!s100 J2jLTQC6]Dk>0h3>c2<;93
+IXM1S2TzIEzEj[<5R:o<ni2
+R1
+R2
+w1619543067
+8D:/RC_Course_2021/Modelsim/Altera_IP/mult.v
+FD:/RC_Course_2021/Modelsim/Altera_IP/mult.v
+R3
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/RC_Course_2021/Modelsim/Altera_IP/mult.v|
+!s90 -reportprogress|300|-work|work|-stats=none|D:/RC_Course_2021/Modelsim/Altera_IP/mult.v|
+!i113 1
+R6
+R7
+vshreg
+R8
+R10
+!i10b 1
+!s100 h_^M1Ji8eY[Rj2T9nFY:13
+IK2m5Ph2JZ^BeBgzoC>Lk31
 R1
 !s105 shreg_sv_unit
 S1
 R2
-w1619515502
+w1619561769
 8D:/RC_Course_2021/Modelsim/shreg.sv
 FD:/RC_Course_2021/Modelsim/shreg.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-R9
+R11
 !s107 D:/RC_Course_2021/Modelsim/shreg.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/shreg.sv|
 !i113 1
+R9
 R7
-R5
 vshreg_tb
-R6
 R8
+R0
 !i10b 1
-!s100 9>9NZz>z@QzIT5E>:YIQf3
-IR?5m[SAIOX8A4FV_kdJQP1
+!s100 39j9>i:b0L6DMVSnLPbU^3
+I[B[@3FRk^j^9z;GFk4bP52
 R1
 !s105 shreg_tb_sv_unit
 S1
 R2
-w1619412607
+w1619545670
 8D:/RC_Course_2021/Modelsim/shreg_tb.sv
 FD:/RC_Course_2021/Modelsim/shreg_tb.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-R9
+R11
 !s107 D:/RC_Course_2021/Modelsim/shreg_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/shreg_tb.sv|
 !i113 1
+R9
 R7
-R5
 vsine
-R6
 R8
+R10
 !i10b 1
-!s100 N@TZ4BX_eQ_63=F03^2zB0
-ImR=6CdF<cBUmda3Zm>>zW3
+!s100 GUN`Pg9hcz=D8gB5]OFU83
+I8ieNHZ7FEC]=UFT7G_<Wf0
 R1
 !s105 sine_sv_unit
 S1
 R2
-w1619515417
+w1619545649
 8D:/RC_Course_2021/Modelsim/sine.sv
 FD:/RC_Course_2021/Modelsim/sine.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-R9
+R11
 !s107 D:/RC_Course_2021/Modelsim/sine.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/sine.sv|
 !i113 1
+R9
 R7
-R5
 vsine_tb
-R6
 R8
+R10
 !i10b 1
-!s100 U1@W>igFXHg4PbYIMon9<1
-IzK]PF>KOAY:=35<Mlj<OY1
+!s100 14Y[PM2So8:W8FTg=_^GE0
+I]NT<QH=A0N1An_9aL^]=^0
 R1
 !s105 sine_tb_sv_unit
 S1
 R2
-w1619307930
+w1619545673
 8D:/RC_Course_2021/Modelsim/sine_tb.sv
 FD:/RC_Course_2021/Modelsim/sine_tb.sv
-L0 1
-R3
+L0 3
+R4
 r1
 !s85 0
 31
-R9
+R11
 !s107 D:/RC_Course_2021/Modelsim/sine_tb.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|D:/RC_Course_2021/Modelsim/sine_tb.sv|
 !i113 1
+R9
 R7
-R5
